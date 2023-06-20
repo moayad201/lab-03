@@ -1,7 +1,7 @@
 package edu.kau.fcit.cpit252;
 
-import static org.junit.Assert.*;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.lang.reflect.Constructor;
 
@@ -11,7 +11,7 @@ public class Lab3Test
     // Asset Car implements cloneable
     @Test
     public void assertCarIsCloneable(){
-       assertEquals(Car.class.getInterfaces()[0].getName(), java.lang.Cloneable.class.getName());
+        assertEquals(Car.class.getInterfaces()[0].getName(), java.lang.Cloneable.class.getName());
     }
 
     // Asset Car overrides the clone method
